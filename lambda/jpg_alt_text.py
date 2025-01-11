@@ -14,9 +14,7 @@ def lambda_handler(event, context):
     try:
         # 1) Slack 이벤트 파싱
         body = json.loads(event["body"])
-        slack_event = body["event"]
-        file_info = slack_event["files"][0]
-        file_url = file_info["url_private"]
+        file_url = body["url_private"]
         print("File URL:", file_url)
 
         # 2) Slack 파일 다운로드
