@@ -70,13 +70,13 @@ def handle_message_event(event, client, say):
         corrected_text = response.json().get("corrected_message")
 
         if corrected_text.strip(".") != message_text:
-          say("corrected message: " + corrected_text)
+          #say("corrected message: " + corrected_text)
 
-        #   response = client.chat_update(
-        #     channel=channel_id,
-        #     ts=ts,
-        #     text=corrected_text
-        # )
+          response = client.chat_update(
+            channel=channel_id,
+            ts=ts,
+            text=corrected_text
+        )
     except requests.exceptions.RequestException as e:
         # If correction fails, send a message in the thread
         client.chat_postMessage(
