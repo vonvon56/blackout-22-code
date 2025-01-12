@@ -54,4 +54,7 @@ AWS lambda와 openai api, [alt text](https://alttext.ai/account/api_keys)를 활
 
 ## ℹ️ 사용 예시
 
-(사진 첨부 예정)
+[맞춤법_시연](https://github.com/user-attachments/assets/a309ce45-efe1-429c-b20f-232f3a89c34e)
+
+- 맞춤법이 틀린 경우 해당 채팅 자동 수정
+- 틀리지 않은 경우 반응하지 않음
